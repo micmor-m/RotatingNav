@@ -13,7 +13,8 @@ body {
   /* height: 100vh; */
   /* overflow: hidden; */
   margin: 0;
-  background-color: #2e2d2e;
+  /* background-color: #2e2d2e; */
+  background-color: white;
   z-index: -1;
 }
 
@@ -86,11 +87,13 @@ main {
 }
 
 section {
-  background-color: white;
+  /* background-color: white; */
+  background-color: #2e2d2e;
   padding-bottom: 3rem;
   margin-top: -80px;
   padding-top: 80px;
   transition: transform 1s;
+  color: white;
 }
 
 section:hover {
@@ -100,7 +103,7 @@ section:hover {
 nav {
   position: absolute;
   bottom: 5rem;
-  /* z-index: -1; */
+  z-index: -1;
 }
 
 nav ul {
@@ -109,7 +112,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: red;
+  color: black;
   margin-left: 0rem;
 }
 
