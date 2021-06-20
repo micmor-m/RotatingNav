@@ -13,8 +13,8 @@ body {
   /* height: 100vh; */
   /* overflow: hidden; */
   margin: 0;
-  /* background-color: #2e2d2e;
-  z-index: -1; */
+  background-color: #2e2d2e;
+  z-index: -1;
 }
 
 aside {
@@ -27,6 +27,7 @@ aside {
   background-color: #f97b6f;
 
   border-radius: 0 0 100% 0;
+  z-index: 2;
 }
 
 #close {
@@ -84,6 +85,46 @@ article h3 {
 main {
 }
 
-/* section {
-  transform: rotate(-20deg) translate(100px, -100px);
-} */
+section {
+  background-color: white;
+  padding-bottom: 3rem;
+  margin-top: -80px;
+  padding-top: 80px;
+  transition: transform 1s;
+}
+
+section:hover {
+  transform: rotate(-20deg) translate(250px, -250px);
+}
+
+nav {
+  position: absolute;
+  bottom: 5rem;
+  /* z-index: -1; */
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: red;
+  margin-left: 0rem;
+}
+
+nav img {
+  margin-right: 1rem;
+}
+
+nav li {
+  margin: 1.3rem 1.5rem;
+}
+
+nav li:first-of-type {
+  margin: 1.3rem 0;
+}
+
+nav li:last-of-type {
+  margin: 1.3rem 2.7rem;
+}
