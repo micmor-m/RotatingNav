@@ -4,33 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://use.fontawesome.com/ecccdffdac.js"></script>
+    <script
+      src="https://kit.fontawesome.com/01bd1e7f01.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Rotating Nav</title>
   </head>
   <body>
-    <aside>
-      <a href="#" id="close" class="icons">
-        <!-- <img
-          id="close"
-          class="icons"
-          src="./images/icons/delete.png"
-          alt="close"
-      /> -->
-        <i class="fas fa-times"></i>
-      </a>
-      <a href="#" id="square" class="icons">
-        <!-- <img
-          id="square"
-          class="icons"
-          src="./images/icons/square.png"
-          alt="square"
-      /> -->
-        <i class="fas fa-bars"></i>
-      </a>
-    </aside>
-    <main>
-      <section id="target">
+    <main class="container show-nav">
+      <aside class="circle-container">
+        <div class="circle">
+          <button id="close">
+            <i class="fas fa-times"></i>
+          </button>
+          <button id="open">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </aside>
+
+      <section class="content">
         <article>
           <h1>Amazing Article</h1>
           <h2>Jonh Doe</h2>
@@ -52,52 +46,30 @@
           </p>
         </article>
       </section>
-
-      <nav>
-        <ul>
-          <li>
-            <a href="#">
-              <!-- <img
-                class="icons"
-                src="./images/icons/home.png"
-                alt="home"
-              /> -->
-              <i class="fas fa-home"></i>
-              HOME</a
-            >
-          </li>
-          <li>
-            <a href="#">
-              <!-- <img
-                class="icons"
-                src="./images/icons/contact.png"
-                alt="about-ico"
-              /> -->
-              <i class="fas fa-user-alt"></i>
-              ABOUT</a
-            >
-          </li>
-          <li>
-            <a href="#" class="icons">
-              <!-- <img
-                class="icons"
-                src="./images/icons/email.png"
-                alt="email-ico"
-              /> -->
-              <i class="fas fa-envelope"></i>
-              CONTACT</a
-            >
-          </li>
-        </ul>
-      </nav>
     </main>
-    <!-- <footer>
-      Icons made by
-      <a href="https://www.freepik.com" title="Freepik">Freepik</a>,
-      <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a>
-      from
-      <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
-    </footer> -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#">
+            <i class="fas fa-home"></i>
+            HOME</a
+          >
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-user-alt"></i>
+            ABOUT</a
+          >
+        </li>
+        <li>
+          <a href="#" class="icons">
+            <i class="fas fa-envelope"></i>
+            CONTACT</a
+          >
+        </li>
+      </ul>
+    </nav>
+
     <script src="./script.js"></script>
   </body>
 </html>
