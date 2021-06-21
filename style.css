@@ -15,7 +15,7 @@ body {
   margin: 0;
   /* background-color: #2e2d2e; */
   background-color: white;
-  z-index: -1;
+  z-index: -10;
 }
 
 aside {
@@ -28,7 +28,7 @@ aside {
   background-color: #f97b6f;
 
   border-radius: 0 0 100% 0;
-  z-index: 2;
+  z-index: 10;
 }
 
 #close {
@@ -84,9 +84,10 @@ article h3 {
 }
 
 main {
+  z-index: 2;
 }
 
-section {
+#target {
   /* background-color: white; */
   background-color: #2e2d2e;
   padding-bottom: 3rem;
@@ -94,16 +95,19 @@ section {
   padding-top: 80px;
   transition: transform 1s;
   color: white;
+  z-index: 5;
 }
 
-section:hover {
-  transform: rotate(-20deg) translate(250px, -250px);
-}
+.rotation {
+  transform: rotate(-20deg) translate(200px, -150px);
+  /* transform: rotate(-20deg) translate(25vh, -5vh);
+} */
 
 nav {
   position: absolute;
   bottom: 5rem;
-  z-index: -1;
+  z-index: 0;
+  visibility: hidden;
 }
 
 nav ul {
