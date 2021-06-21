@@ -1,20 +1,13 @@
-const openBtn = document.getElementById("square");
+const openBtn = document.getElementById("open");
 const closeBtn = document.getElementById("close");
-const sectionTarget = document.getElementById("target");
-const nav = document.getElementsByTagName("nav")[0];
-//console.log("sectionTarget", sectionTarget);
+const sectionTarget = document.querySelector(".container");
+
 openBtn.addEventListener("click", () => {
   console.log("sectionTarget", sectionTarget);
-  sectionTarget.classList.add("rotation");
-  openBtn.style.display = "none";
-  closeBtn.style.display = "inline-block";
-  nav.style.visibility = "visible";
+  sectionTarget.classList.add("show-nav");
 });
 
 closeBtn.addEventListener("click", () => {
   console.log("sectionTarget", sectionTarget);
-  sectionTarget.classList.remove("rotation");
-  closeBtn.style.display = "none";
-  openBtn.style.display = "inline-block";
-  nav.style.visibility = "hidden";
+  sectionTarget.classList.remove("show-nav");
 });
