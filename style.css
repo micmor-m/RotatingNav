@@ -1,54 +1,73 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  justify-content: center;
-  /* height: 100vh; */
-  /* overflow: hidden; */
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
   margin: 0;
-  /* background-color: #2e2d2e; */
-  background-color: white;
-  z-index: -10;
+  background-color: #333;
+  color: #222;
 }
 
-aside {
-  /* display: flex;
-  justify-content: flex-start; */
-  width: 5rem;
-  height: 5rem;
-  padding: 1.4rem 1rem 1rem 1rem;
-  border: 1px solid #f97b6f;
-  background-color: #f97b6f;
-
-  border-radius: 0 0 100% 0;
-  z-index: 10;
+.container {
+  background-color: #fafafa;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
 }
 
-#close {
-  display: none;
-}
-a {
-  /* display: flex;
-  justify-items: start; */
-}
-#square {
-  /* display: flex;
-  justify-items: start; */
-  color: white;
+.container.show-nav {
+  transform: rotate(-20deg);
 }
 
-article {
-  width: 70%;
-  margin: auto;
-  text-align: justify;
-  /* font-family: "Roboto"; */
+.circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.circle {
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  transition: transform 0.5s linear;
+}
+
+.circle button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+}
+
+.circle button:focus {
+  outline: none;
+}
+
+.circle button#open {
+  left: 60%;
+}
+
+.circle button#close {
+  top: 60%;
+  transform: rotate(90deg);
+  transform-origin: top left;
+}
+
+.content {
+  max-width: 1000px;
+  margin: 50px auto;
 }
 
 article h1 {
@@ -66,48 +85,13 @@ article h3 {
   margin-bottom: 0.5rem;
 }
 
-#cat {
-  width: 100%;
-  /* max-width: 40rem; */
-  /* height: 100%; */
-  /* vertical-align: middle; */
-}
-
 #cat img {
-  width: 100%;
+  max-width: 100%;
 }
-
-.icons {
-  width: 1.3rem;
-  height: 1.3rem;
-  vertical-align: middle;
-}
-
-main {
-  z-index: 2;
-}
-
-#target {
-  /* background-color: white; */
-  background-color: #2e2d2e;
-  padding-bottom: 3rem;
-  margin-top: -80px;
-  padding-top: 80px;
-  transition: transform 1s;
-  color: white;
-  z-index: 5;
-}
-
-.rotation {
-  transform: rotate(-20deg) translate(200px, -150px);
-  /* transform: rotate(-20deg) translate(25vh, -5vh);
-} */
 
 nav {
   position: absolute;
   bottom: 5rem;
-  z-index: 0;
-  visibility: hidden;
 }
 
 nav ul {
@@ -116,7 +100,7 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: black;
+  color: white;
   margin-left: 0rem;
 }
 
