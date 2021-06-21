@@ -25,6 +25,11 @@ body {
   transform: rotate(-20deg);
 }
 
+.container.show-nav + nav li {
+  transform: translateX(0);
+  transition-delay: 0.3s;
+}
+
 .circle-container {
   position: fixed;
   top: -100px;
@@ -90,8 +95,10 @@ article h3 {
 }
 
 nav {
-  position: absolute;
-  bottom: 5rem;
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
 }
 
 nav ul {
@@ -110,12 +117,16 @@ nav img {
 
 nav li {
   margin: 1.3rem 1.5rem;
+  transform: translate(-150%);
+  transition: transform 0.5s ease-in;
 }
 
 nav li:first-of-type {
   margin: 1.3rem 0;
+  transform: translate(-100%);
 }
 
 nav li:last-of-type {
   margin: 1.3rem 2.7rem;
+  transform: translate(-200%);
 }
